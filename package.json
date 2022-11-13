@@ -1,0 +1,11 @@
+{
+    "name": "WebsiteBackend",
+    "version": "1.0.0",
+    "scripts": {
+        "start":"node index.js",
+        "restart":"node index.js"
+    },
+    "author": {
+        "name": "Secret1337"
+    }
+}
