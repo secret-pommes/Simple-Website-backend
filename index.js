@@ -11,17 +11,17 @@ app.listen(port, ()=>{
 })
 
 // main site
-app.get("/", async (req, res)=>{
+app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname, "/web/index.html"))
 })
 
 // a subsite
-app.get("/status", async (req, res)=>{
+app.get("/status", (req, res)=>{
     res.sendFile(path.join(__dirname, "/web/subsites/status.html"))
 })
 
 // again a subsite
-app.get("/internalstatus", async (req, res)=>{
+app.get("/internalstatus", (req, res)=>{
     res.sendStatus(200)
 })
 
